@@ -1,36 +1,40 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
-        <style> @import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');</style>
-    </head>
-    <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-                <p id="home-point">0</p>
-                <div class="buttons">
-                    <button onclick="addOne(homePoint,pointHome)">+1</button>
-                    <button onclick="addTwo(homePoint,pointHome)">+2</button>
-                    <button onclick="addThree(homePoint,pointHome)">+3</button>
-                </div>
-               
-            </div>
-       
-            <div>
-                <h3>GUEST</h3>
-                <p id="guest-point">0</p>
-                <div class="buttons">
-                    <button onclick="addOne(guestPoint,pointGuest)">+1</button>
-                    <button onclick="addTwo(guestPoint,pointGuest)">+2</button>
-                    <button onclick="addThree(guestPoint,pointGuest)">+3</button>
-                </div>
-               
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet" />
+    <style>
+        @import url("https://fonts.cdnfonts.com/css/cursed-timer-ulil");
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <p id="home-point">0</p>
+            <div class="buttons">
+                <button onclick="addOne(homePoint,pointHome)">+1</button>
+                <button onclick="addTwo(homePoint,pointHome)">+2</button>
+                <button onclick="addThree(homePoint,pointHome)">+3</button>
             </div>
         </div>
-        <br>
-        <div ><button class="reset" onclick="reset()">RESET</button></div>
-        
-        <script src="index.js"></script>
-    </body>
+
+        <div>
+            <h3>AWAY</h3>
+            <p id="guest-point">0</p>
+            <div class="buttons">
+                <button onclick="addOne(guestPoint,pointGuest)">+1</button>
+                <button onclick="addTwo(guestPoint,pointGuest)">+2</button>
+                <button onclick="addThree(guestPoint,pointGuest)">+3</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div><button class="reset" onclick="reset()">RESET</button></div>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
